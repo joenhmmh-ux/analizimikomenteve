@@ -2,5 +2,5 @@ services:
   - type: web
     name: sentiment-analysis
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn Source.app:app
+    buildCommand: cd 'projekt dipllome/render_project' && pip install -r requirements.txt
+    startCommand: cd 'projekt dipllome/render_project' && gunicorn Source.app:app
